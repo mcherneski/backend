@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_layout_services",
+  "info": {
+    "displayName": "Service",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Service_Name": {
+      "type": "string"
+    },
+    "Service_Description": {
+      "type": "text"
+    }
+  }
+}

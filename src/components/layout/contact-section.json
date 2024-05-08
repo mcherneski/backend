@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layout_contact_sections",
+  "info": {
+    "displayName": "Contact Section"
+  },
+  "options": {},
+  "attributes": {
+    "Contact_Header": {
+      "type": "string"
+    },
+    "Contact_Copy": {
+      "type": "text"
+    }
+  }
+}

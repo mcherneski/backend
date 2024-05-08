@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_layout_services_sections",
+  "info": {
+    "displayName": "Services Section"
+  },
+  "options": {},
+  "attributes": {
+    "Services_Header": {
+      "type": "string"
+    },
+    "Service": {
+      "displayName": "Service",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.service"
+    }
+  }
+}
