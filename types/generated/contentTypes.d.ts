@@ -374,7 +374,7 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    subtitle: Attribute.String;
+    Logo_Subtitle: Attribute.String;
     blocks: Attribute.DynamicZone<
       [
         'layout.hero-section',

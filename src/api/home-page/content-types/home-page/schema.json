@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "subtitle": {
+    "Logo_Subtitle": {
       "type": "string"
     },
     "blocks": {

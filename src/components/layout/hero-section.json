@@ -17,6 +17,11 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "Hero_Header_Scroll": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.hero-header-scroll"
     }
   }
 }

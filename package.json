@@ -1,8 +1,8 @@
 {
-  "name": "backend",
+  "name": "fronzbackend",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Backend for Fronz.media",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -22,7 +22,7 @@
     "styled-components": "5.3.3"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Mike Cherneski"
   },
   "strapi": {
     "uuid": "659ca1c7-3f75-4835-a947-5a01f44eada8"

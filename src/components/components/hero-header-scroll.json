@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_components_hero_header_scrolls",
+  "info": {
+    "displayName": "Hero_Header_Scroll"
+  },
+  "options": {},
+  "attributes": {
+    "Word": {
+      "type": "string"
+    }
+  }
+}

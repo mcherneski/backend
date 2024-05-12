@@ -1,5 +1,15 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface ComponentsHeroHeaderScroll extends Schema.Component {
+  collectionName: 'components_components_hero_header_scrolls';
+  info: {
+    displayName: 'Hero_Header_Scroll';
+  };
+  attributes: {
+    Word: Attribute.String;
+  };
+}
+
 export interface ComponentsService extends Schema.Component {
   collectionName: 'components_layout_services';
   info: {
@@ -45,6 +55,10 @@ export interface LayoutHeroSection extends Schema.Component {
   attributes: {
     Hero_Header: Attribute.String;
     Hero_Image: Attribute.Media;
+    Hero_Header_Scroll: Attribute.Component<
+      'components.hero-header-scroll',
+      true
+    >;
   };
 }
 
@@ -62,6 +76,7 @@ export interface LayoutServicesSection extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'components.hero-header-scroll': ComponentsHeroHeaderScroll;
       'components.service': ComponentsService;
       'layout.about-section': LayoutAboutSection;
       'layout.contact-section': LayoutContactSection;
