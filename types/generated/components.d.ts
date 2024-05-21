@@ -10,6 +10,23 @@ export interface ComponentsHeroHeaderScroll extends Schema.Component {
   };
 }
 
+export interface ComponentsProject extends Schema.Component {
+  collectionName: 'components_components_projects';
+  info: {
+    displayName: 'project';
+    description: '';
+  };
+  attributes: {
+    name: Attribute.String;
+    client: Attribute.String;
+    media: Attribute.Media;
+    detailed_description: Attribute.Blocks;
+    featured: Attribute.Boolean;
+    slug: Attribute.String;
+    short_description: Attribute.Text;
+  };
+}
+
 export interface ComponentsService extends Schema.Component {
   collectionName: 'components_layout_services';
   info: {
@@ -77,6 +94,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'components.hero-header-scroll': ComponentsHeroHeaderScroll;
+      'components.project': ComponentsProject;
       'components.service': ComponentsService;
       'layout.about-section': LayoutAboutSection;
       'layout.contact-section': LayoutContactSection;

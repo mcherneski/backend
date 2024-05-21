@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_components_projects",
+  "info": {
+    "displayName": "project",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "client": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "detailed_description": {
+      "type": "blocks"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "text"
+    }
+  }
+}
