@@ -1,1 +1,5 @@
-module.exports = () => ({});
+module.exports = () => ({
+    "video-field": {
+        enabled: true
+    }
+});
