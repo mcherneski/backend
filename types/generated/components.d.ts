@@ -1,5 +1,18 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface ComponentsCsVideoGallery extends Schema.Component {
+  collectionName: 'components_components_cs_video_galleries';
+  info: {
+    displayName: 'cs-video-gallery';
+    icon: 'handHeart';
+    description: '';
+  };
+  attributes: {
+    video: Attribute.JSON & Attribute.CustomField<'plugin::video-field.video'>;
+    videoTitle: Attribute.String;
+  };
+}
+
 export interface ComponentsHeroHeaderScroll extends Schema.Component {
   collectionName: 'components_components_hero_header_scrolls';
   info: {
@@ -36,6 +49,17 @@ export interface ComponentsService extends Schema.Component {
   attributes: {
     Service_Name: Attribute.String;
     Service_Description: Attribute.Text;
+  };
+}
+
+export interface ComponentsTags extends Schema.Component {
+  collectionName: 'components_components_tags';
+  info: {
+    displayName: 'tags';
+    icon: 'stack';
+  };
+  attributes: {
+    tag_name: Attribute.String;
   };
 }
 
@@ -93,9 +117,11 @@ export interface LayoutServicesSection extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'components.cs-video-gallery': ComponentsCsVideoGallery;
       'components.hero-header-scroll': ComponentsHeroHeaderScroll;
       'components.project': ComponentsProject;
       'components.service': ComponentsService;
+      'components.tags': ComponentsTags;
       'layout.about-section': LayoutAboutSection;
       'layout.contact-section': LayoutContactSection;
       'layout.hero-section': LayoutHeroSection;

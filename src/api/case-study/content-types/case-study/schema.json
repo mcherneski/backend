@@ -4,7 +4,8 @@
   "info": {
     "singularName": "case-study",
     "pluralName": "case-studies",
-    "displayName": "Case-Study"
+    "displayName": "Case-Study",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -30,14 +31,27 @@
       "type": "blocks"
     },
     "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "videoGallery": {
+      "displayName": "cs-video-gallery",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.cs-video-gallery"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "case_studies"
     }
   }
 }

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_components_cs_video_galleries",
+  "info": {
+    "displayName": "cs-video-gallery",
+    "icon": "handHeart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "customField",
+      "customField": "plugin::video-field.video"
+    },
+    "videoTitle": {
+      "type": "string"
+    }
+  }
+}
