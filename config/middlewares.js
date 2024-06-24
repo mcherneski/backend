@@ -16,7 +16,7 @@ module.exports = [
             "facebook.com",
             "www.facebook.com",
           ],
-          "connect-src": ["'self'", "https:", "blob:", "*.strapi.io",],
+          "connect-src": ["'self'", "https:", "blob:", "market-assets.strapi.io", "*.strapi.io"],
           "img-src": [
             "'self'",
             "data:",
