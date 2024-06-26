@@ -13,6 +13,7 @@ module.exports = [
             "blob:",
             "market-assets.strapi.io",
             "res.cloudinary.com",
+            "*.digitaloceanspaces.com"
           ],
           "frame-src": [
             "'self'",
@@ -22,6 +23,7 @@ module.exports = [
             "*.vimeo.com",
             "facebook.com",
             "www.facebook.com",
+            "*.digitaloceanspaces.com"
           ],
           "media-src": [
             "'self'",
@@ -29,6 +31,7 @@ module.exports = [
             "blob:",
             "market-assets.strapi.io",
             "res.cloudinary.com",
+            "*.digitaloceanspaces.com"
           ],
           upgradeInsecureRequests: null,
         },
