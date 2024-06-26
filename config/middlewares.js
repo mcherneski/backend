@@ -6,13 +6,15 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https:"],
+          "connect-src": ["'self'", "https:", "*.strapi.io", "blob:"],
           "img-src": [
             "'self'",
             "data:",
             "blob:",
             "market-assets.strapi.io",
             "res.cloudinary.com",
+            "*.digitaloceanspaces.com",
+            "*.strapiapp.com"
           ],
           "frame-src": [
             "'self'",
@@ -22,6 +24,8 @@ module.exports = [
             "*.vimeo.com",
             "facebook.com",
             "www.facebook.com",
+            "*.digitaloceanspaces.com",
+            "*.strapiapp.com"
           ],
           "media-src": [
             "'self'",
@@ -29,6 +33,8 @@ module.exports = [
             "blob:",
             "market-assets.strapi.io",
             "res.cloudinary.com",
+            "*.digitaloceanspaces.com",
+            "*.strapiapp.com"
           ],
           upgradeInsecureRequests: null,
         },
