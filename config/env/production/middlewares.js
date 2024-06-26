@@ -14,6 +14,15 @@ module.exports = [
             "market-assets.strapi.io",
             "res.cloudinary.com",
           ],
+          "frame-src": [
+            "'self'",
+            "youtube.com",
+            "www.youtube.com",
+            "vimeo.com",
+            "*.vimeo.com",
+            "facebook.com",
+            "www.facebook.com",
+          ],
           "media-src": [
             "'self'",
             "data:",
