@@ -21,6 +21,13 @@ module.exports = [
             "market-assets.strapi.io",
             "res.cloudinary.com",
           ],
+          // "frame-src": [
+          //   "*.vimeo.com",
+          //   "vimeo.com",
+          //   "'self'",
+          //   "youtube.com",
+          //   "*.youtube.com",
+          // ],
           upgradeInsecureRequests: null,
         },
       },
